@@ -92,14 +92,13 @@ An interactive dashboard featuring:
 2. Open `customer_behavior_analysis_sql.sql` in your SQL client (PostgreSQL recommended)
 3. Run queries individually or all at once
 
-> **Note:** Query 10 references an `age_group` column — make sure to create this derived column before running it:
-> ```sql
-> ALTER TABLE customer ADD COLUMN age_group TEXT;
-> UPDATE customer SET age_group =
->   CASE WHEN age < 25 THEN 'Gen Z'
->        WHEN age BETWEEN 25 AND 40 THEN 'Millennial'
->        WHEN age BETWEEN 41 AND 56 THEN 'Gen X'
->        ELSE 'Boomer+' END;
+> **Note:** Query 10 references an  column — make sure to create this derived column before running it:
+> **Note:**  Query 10 references an `age_group` column. This column is created in the Python notebook using pd.qcut() before the data is
+> loaded into the database — run the notebook first:
+> ```notebook
+> pythonlabels = ['Young Adult', 'Adult', 'Middle-Aged', 'Senior']
+> df['age_group'] = pd.qcut(df['age'], q=4, labels=labels)
+> Then export the updated dataframe to your database before running Q10.
 > ```
 
 ### Run the Python Notebook
