@@ -1,7 +1,7 @@
 # 🛍️ Customer Shopping Behavior Analysis
 This project analyzes a retail customer shopping dataset (~3,900 records) to uncover behavioral trends across demographics, product categories, subscription status, and purchase channels. It combines SQL querying, Python-based EDA, and an interactive Power BI dashboard to deliver actionable business insights.
 
-📁 Project Structure
+## Project Structure
 
 ```
 customer-behavior-analysis/
@@ -14,7 +14,7 @@ customer-behavior-analysis/
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 The dataset contains **3,900 customer records** with **18 features** covering:
 
@@ -39,7 +39,7 @@ The dataset contains **3,900 customer records** with **18 features** covering:
 
 ---
 
-## 🔍 Business Questions Answered
+## Business Questions Answered
 
 ### SQL Analysis (`customer_behavior_analysis_sql.sql`)
 
@@ -74,7 +74,7 @@ An interactive dashboard featuring:
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 | Tool | Purpose |
 |---|---|
@@ -85,7 +85,7 @@ An interactive dashboard featuring:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Run the SQL Queries
 1. Load `customer_shopping_behavior.csv` into your database as a table named `customer`
@@ -113,7 +113,7 @@ Open `customer_behavior_dashboard.pbix` in [Power BI Desktop](https://powerbi.mi
 
 ---
 
-## 📈 Key Insights
+## Key Insights
 
 - Subscribed customers show notably higher average spend compared to non-subscribers
 - A small set of products consistently receive the highest discount application rates
@@ -122,12 +122,4 @@ Open `customer_behavior_dashboard.pbix` in [Power BI Desktop](https://powerbi.mi
 
 ---
 
-## 🤝 Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
-
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
